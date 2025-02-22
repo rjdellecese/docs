@@ -79,7 +79,6 @@
     }
   ],
   "footerSocials": {
-    "github": "https://github.com/rjdellese/confect",
-    "npm": "https://www.npmjs.com/package/@rjdellecese/confect"
+    "github": "https://github.com/rjdellese/confect"
   }
 }

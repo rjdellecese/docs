@@ -38,15 +38,10 @@
       "url": "https://github.com/rjdellecese/confect"
     },
     {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
+      "name": "npm",
+      "icon": "npm",
+      "url": "https://www.npmjs.com/package/@rjdellecese/confect"
     },
-    {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
-    }
   ],
   "navigation": [
     {

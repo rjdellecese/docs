@@ -1,71 +1,20 @@
 ---
-title: Introduction
+title: "Introduction"
 description: "Welcome to the home of your new documentation"
 ---
 
-<img
-  className="block dark:hidden"
-  src="/images/hero-light.svg"
-  alt="Hero Light"
-/>
-<img
-  className="hidden dark:block"
-  src="/images/hero-dark.svg"
-  alt="Hero Dark"
-/>
+<Warning>
+  Confect is pre-1.0 and its API is not yet stable.
+</Warning>
 
-## Setting up
+Confect is a framework that deeply integrates [Effect](https://effect.website/) with [Convex](https://convex.dev/). It's more than just Effect bindings! Confect allows you to:
 
-The first step to world-class documentation is setting up your editing environments.
+* Define your Convex database schema using Effect schemas.
 
-<CardGroup cols={2}>
-  <Card
-    title="Edit Your Docs"
-    icon="pen-to-square"
-    href="https://mintlify.com/docs/quickstart"
-  >
-    Get your docs set up locally for easy development
-  </Card>
-  <Card
-    title="Preview Changes"
-    icon="image"
-    href="https://mintlify.com/docs/development"
-  >
-    Preview your changes before you push to make sure they're perfect
-  </Card>
-</CardGroup>
+* Use Confect functions to automatically decode and encode your data according to your Effect schema definitions when reading from and writing to the database.
 
-## Make it yours
+* Write Convex function `args` and `returns` validators using Effect's Schema library.
 
-Update your docs to your brand and add valuable content for the best user conversion.
+* Use Effect-ified versions of all of the Convex server APIs (`Promise`s become `Effects`, `A | null`s becomes `Option<A>`s, etc.).
 
-<CardGroup cols={2}>
-  <Card
-    title="Customize Style"
-    icon="palette"
-    href="https://mintlify.com/docs/settings/global"
-  >
-    Customize your docs to your company's colors and brands
-  </Card>
-  <Card
-    title="Reference APIs"
-    icon="code"
-    href="https://mintlify.com/docs/api-playground/openapi"
-  >
-    Automatically generate endpoints from an OpenAPI spec
-  </Card>
-  <Card
-    title="Add Components"
-    icon="screwdriver-wrench"
-    href="https://mintlify.com/docs/content/components/accordions"
-  >
-    Build interactive features and designs to guide your users
-  </Card>
-  <Card
-    title="Get Inspiration"
-    icon="stars"
-    href="https://mintlify.com/customers"
-  >
-    Check out our showcase of our favorite documentation
-  </Card>
-</CardGroup>
+It's recommended that you have some familiarity with both Effect and Convex, including the vanilla `convex-js` APIs, before getting started with Confect.
